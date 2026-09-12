@@ -1,0 +1,25 @@
+===== RELATÓRIO DE AUDITORIA =====
+Data: Sat Sep 12 16:59:27 -03 2026
+
+----- Arquivos com permissões inseguras (777) -----
+./config.env
+
+----- Top 5 processos por uso de CPU -----
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1  21872 12032 ?        Ss   14:44   0:01 /sbin/init
+root          43  0.0  0.2  66820 16484 ?        S<s  14:44   0:00 /usr/lib/systemd/systemd-journald
+root         182  0.0  0.1 1756096 13056 ?       Ssl  14:44   0:00 /usr/libexec/wsl-pro-service -vv
+message+     173  0.0  0.0   9624  4864 ?        Ss   14:44   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root          92  0.0  0.0  25144  6144 ?        Ss   14:44   0:00 /usr/lib/systemd/systemd-udevd
+
+----- Top 5 processos por uso de memória -----
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         202  0.0  0.2 107024 22264 ?        Ssl  14:44   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root          43  0.0  0.2  66820 16484 ?        S<s  14:44   0:00 /usr/lib/systemd/systemd-journald
+root         182  0.0  0.1 1756096 13056 ?       Ssl  14:44   0:00 /usr/libexec/wsl-pro-service -vv
+systemd+     162  0.0  0.1  21460 12800 ?        Ss   14:44   0:00 /usr/lib/systemd/systemd-resolved
+root           1  0.0  0.1  21872 12032 ?        Ss   14:44   0:01 /sbin/init
+
+----- Erros encontrados em app.log -----
+10:05 ERROR Falha ao conectar no banco
+10:15 ERROR Timeout na API

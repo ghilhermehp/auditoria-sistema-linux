@@ -1,0 +1,4 @@
+10:00 INFO Sistema iniciado
+10:05 ERROR Falha ao conectar no banco
+10:10 INFO Processando dados
+10:15 ERROR Timeout na API
