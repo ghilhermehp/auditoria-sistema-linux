@@ -16,3 +16,6 @@ ps aux --sort=-%mem | head -n 6
 echo ""
 echo "----- Erros encontrados em app.log -----"
 grep "ERROR" app.log
+
+echo "===== Usuários logados no sistema ====="
+who
