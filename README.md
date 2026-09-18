@@ -1,6 +1,6 @@
 # Auditoria de Sistema Linux
 
-Script em Bash para auditoria básica de um sistema Linux, verificando:
+>Script em Bash para auditoria básica de um sistema Linux, verificando:
 
 - Espaço em disco disponível
 - Processos em execução
