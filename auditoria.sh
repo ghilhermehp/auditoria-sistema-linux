@@ -19,3 +19,6 @@ grep "ERROR" app.log
 
 echo "===== Usuários logados no sistema ====="
 who
+
+echo "===== Uso de memoria ====="
+free -h
